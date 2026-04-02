@@ -31,7 +31,7 @@ exec-once = ~/WeatherPaper/WeatherPaperHypr.sh
 ```
 Then run.
 ```
-sudo systemctl reboot
+systemctl reboot
 ```
 This **will** restart your computer.
 
@@ -45,7 +45,7 @@ Name=WeatherPaperKDE.sh
 Type=Application
 X-KDE-AutostartScript=true
 E0F
-sudo systemctl reboot
+systemctl reboot
 ```
 This **will** restart your computer.
 
