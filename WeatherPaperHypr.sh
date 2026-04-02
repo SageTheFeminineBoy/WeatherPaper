@@ -35,7 +35,7 @@ set_wallpaper() {
     if pgrep -x "awww-daemon" > /dev/null; then
         awww img "$Wallpaper"
     else
-        echo "awww-daemon not running, try adding 'exec-once = awww-daemon' and 'exec-once = ~/WeatherPaper/WeatherPaper.sh' to '~/.config/hypr/hyprland.conf"
+        echo "awww-daemon not running, try adding 'exec-once = awww-daemon' and 'exec-once = ~/WeatherPaper/WeatherPaperHypr.sh' to '~/.config/hypr/hyprland.conf"
     fi
 }
 
