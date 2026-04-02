@@ -21,14 +21,10 @@ After cloning the repository you need to sign up on [Openweathermap's sign up pa
 ### Hyprland
 ```
 sudo pacman -S awww
-```
-Once awww is installed add these lines to your hyprland.conf file.
-```
+cat <<E0F >> ~/.config/hypr/hyprland.conf
 exec-once = awww-daemon
 exec-once = ~/WeatherPaper/WeatherPaperHypr.sh
-```
-Then run.
-```
+E0F
 systemctl reboot
 ```
 This **will** restart your computer.
