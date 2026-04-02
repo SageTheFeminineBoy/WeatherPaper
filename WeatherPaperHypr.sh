@@ -45,7 +45,6 @@ while true; do
     Wallpaper="$Wallpaperdir/$Weather/$Time.png"
 
     if [ -f "$Wallpaper" ]; then
-        sleep 30
         set_wallpaper "$Wallpaper"
     else
         echo "${Wallpaperpath}/${Weather}/${Time}.png"
