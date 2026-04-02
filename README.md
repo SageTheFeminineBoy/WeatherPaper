@@ -7,8 +7,6 @@ WeatherPaper is an opensource wallpaper changer that runs in the background, it 
 
 ## Wallpaper Changing
 
-A short video of the wallpaper changing weather and time.
-
 https://github.com/user-attachments/assets/659a3663-2d95-4400-9878-48f4e6f60b39 
 
 ## Instalation
