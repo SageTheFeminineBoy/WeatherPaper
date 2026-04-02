@@ -33,8 +33,14 @@ Then run `sudo systemctl reboot` to restart the computer.
 
 ### KDE Plasma
 ```
-cd ~/WeatherPaper
-sudo mv WeatherPaperKDE.sh.desktop ~/.config/autostart
+sudo cat <<E0F > ~/.config/autostart/WeatherPaperKDE.sh.desktop
+[Desktop Entry]
+Exec=/home/$USER/WeatherPaper/WeatherPaperKDE.sh
+Icon=application-x-shellscript
+Name=WeatherPaperKDE.sh
+Type=Application
+X-KDE-AutostartScript=true
+E0F
 sudo systemctl reboot
 ```
 This **will** restart you're computer.
