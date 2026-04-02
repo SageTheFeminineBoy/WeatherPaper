@@ -20,7 +20,7 @@ git clone https://github.com/SageTheFeminineBoy/WeatherPaper
 
 After cloning the repository you need to sign up on [Openweathermap's sign up page](https://home.openweathermap.org/users/sign_up), or if you already have an account you can skip this step. After you have created an account or signed in you can copy your api key from [this page](https://home.openweathermap.org/api_keys). You can now paste this key into your file in the Apikey section. After this you need to search for you're cities Openweathermap id, while Openweathermap no longer shows the city id in urls, you can easily find them by searching your cities name and Openweathermap id. Again once you find it you can paste it into the file this time under the City section.
 
-Hyprland
+### Hyprland
 ```
 sudo pacman -S awww
 ```
@@ -29,14 +29,15 @@ Once awww is installed add these lines to your hyprland.conf file.
 exec-once = awww-daemon
 exec-once = ~/WeatherPaper/WeatherPaperHypr.sh
 ```
-And now you can just restart Hyprland and it should now be running.
+Then run `sudo systemctl reboot` to restart the computer.
 
-KDE Plasma
+### KDE Plasma
 ```
 cd ~/WeatherPaper
-sudo mv WeatherPaperKDE.sh.desktop
+sudo mv WeatherPaperKDE.sh.desktop ~/.config/autostart
+sudo systemctl reboot
 ```
-
+This **will** restart you're computer.
 
 
 
